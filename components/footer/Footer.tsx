@@ -42,8 +42,8 @@ const Footer = () => {
         </SlideInContent>
 
         {/* horizontal hidden on md screens */}
-        <SlideInContent delay={0.5} className="order-2">
-          <div className="my-1 flex h-[1px] w-full bg-white/50 md:hidden " />
+        <SlideInContent delay={0.75}>
+          <div className="my-4 flex h-[1px] w-full bg-white/50 md:hidden" />
         </SlideInContent>
 
         <SlideInContent delay={0.5}>
