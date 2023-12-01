@@ -3,16 +3,10 @@ import Link from "next/link";
 
 import { socials } from "@/constants";
 
-type Props = {};
-
-const RenderSocials: FC<Props> = (props: Props) => {
+const RenderSocials = () => {
   return (
     <div className="flex flex-col order-1 md:order-3 items-start gap-y-2 lg:gap-y-4">
-<<<<<<< HEAD
 
-=======
-      <SlideInContent delay={1}>
->>>>>>> 794af76801fad3b5d9623de25b8f996a6c212a7e
         <p className="text-xs font-semibold uppercase text-white/50 lg:text-sm">
           Socials
         </p>
