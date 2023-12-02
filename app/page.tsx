@@ -2,7 +2,6 @@ import Navbar from "@/components/navbar/Navbar";
 import HeroSection from "@/components/hero/HeroSection";
 import AboutSection from "@/components/about/AboutSection";
 import ServiceSection from "@/components/service/ServiceSection";
-import FadeInSection from "@/components/FadeInSection";
 import ProjectSection from "@/components/projects/ProjectSection";
 import ContactSection from "@/components/contact/ContactSection";
 import Footer from "@/components/footer/Footer";
@@ -16,52 +15,20 @@ export default function Home() {
         <HeroSection />
 
         {/* About Section */}
-          <AboutSection />
+        <AboutSection />
 
         {/* Services Section */}
-        <FadeInSection
-          id="services"
-          aria-label="services"
-          initialColor="rgb(14, 14, 14)"
-          finalColor="#fff9f2"
-          textColor="text-[#5d3b14]"
-        >
-          <ServiceSection />
-        </FadeInSection>
+        <ServiceSection />
 
         {/* Projects Section */}
-        <FadeInSection
-          id="projects"
-          aria-label="projects"
-          initialColor="#fff9f2"
-          finalColor="rgb(14, 14, 14)"
-          textColor="text-white"
-        >
-          <ProjectSection />
-        </FadeInSection>
+        <ProjectSection />
 
         {/* Contact Section */}
-        <FadeInSection
-          id="contact"
-          aria-label="contact"
-          initialColor="rgb(14, 14, 14)"
-          finalColor="#ffd400"
-          textColor="text-black"
-        >
-          <ContactSection />
-        </FadeInSection>
+        <ContactSection />
       </main>
 
       {/* Footer Section */}
-      <FadeInSection
-        id="footer"
-        aria-label="footer"
-        initialColor="#fff9f2"
-        finalColor="#0d0d0d"
-        textColor="text-white"
-      >
-        <Footer />
-      </FadeInSection>
+      <Footer />
     </>
   );
 }
