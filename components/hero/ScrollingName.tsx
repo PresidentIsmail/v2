@@ -10,7 +10,7 @@ const variants: Variants = {
   visible: {
     x: "-10%",
     transition: {
-      duration: 5,
+      duration: 15,
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
