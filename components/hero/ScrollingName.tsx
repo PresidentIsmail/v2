@@ -1,16 +1,16 @@
 "use client";
 
 import { motion, Variants, useScroll, useTransform } from "framer-motion";
-import React from "react";
+import React, { useRef } from "react";
 
 const variants: Variants = {
   hidden: {
-    x: "-10%",
+    x: "-110%",
   },
   visible: {
-    x: "-110%",
+    x: "-10%",
     transition: {
-      duration: 20,
+      duration: 5,
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
@@ -19,15 +19,23 @@ const variants: Variants = {
 };
 
 const ScrollingName: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll();
+  const opacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
+
   return (
-    <motion.div className="absolute bottom-0 left-0 flex whitespace-nowrap text-[max(9em,15vw)] font-bold text-white">
+    <motion.div
+      ref={containerRef}
+      className="absolute bottom-0 left-0 flex whitespace-nowrap text-[max(9em,15vw)] font-light leading-none text-white"
+      style={{ opacity }}
+    >
       <motion.div
         variants={variants}
         initial="hidden"
         animate="visible"
         className="flex gap-x-1"
       >
-        <span>-</span>
+        <span aria-hidden="true">-</span>
         <h1>Ismail Shaikhnag</h1>
       </motion.div>
 
@@ -36,7 +44,7 @@ const ScrollingName: React.FC = () => {
         initial="hidden"
         animate="visible"
         className="flex gap-x-1"
-        style={{ animationDelay: "10s" }} // Start this animation halfway through the first one
+        aria-hidden="true" // prevent the screen reader from reading the text twice
       >
         <span>-</span>
         <h1>Ismail Shaikhnag</h1>
