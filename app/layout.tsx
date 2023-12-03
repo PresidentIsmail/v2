@@ -10,10 +10,15 @@ const GreetingAnimation = dynamic(
   },
 );
 
+// <meta name="google-site-verification" content="fJtqvykAw1qD_OU9FtxauJHsoE-r9dLhYACgaq022sw" />
+
 export const metadata: Metadata = {
   title: "Ismail Shaikhnag - Web Developer",
   description:
     "Ismail Shaikhnag is a skilled web developer dedicated to crafting exceptional digital experiences through design and code.",
+    verification: {
+      google: "fJtqvykAw1qD_OU9FtxauJHsoE-r9dLhYACgaq022sw",
+    }
 };
 
 export default function RootLayout({
