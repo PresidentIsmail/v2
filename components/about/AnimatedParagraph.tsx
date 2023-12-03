@@ -37,7 +37,10 @@ const AnimatedParagraph: React.FC<AnimatedParagraphProps> = ({ paragraph }) => {
   });
 
   return (
-    <span ref={paragraphRef} className="relative flex flex-wrap leading-none ">
+    <span
+      ref={paragraphRef}
+      className="relative flex flex-wrap justify-center leading-none "
+    >
       {/* duplicate the words with a light opacity for a better experience */}
       <DuplicateWords words={words} />
 
@@ -60,10 +63,10 @@ type DuplicateWordsProps = {
 };
 
 const DuplicateWords: FC<DuplicateWordsProps> = ({ words }) => (
-  <span 
-  className="absolute flex flex-wrap leading-none opacity-[0.05]"
-  // hide from screen readers
-  aria-hidden="true"
+  <span
+    className="absolute flex flex-wrap justify-center leading-none opacity-[0.15]"
+    // hide from screen readers
+    aria-hidden="true"
   >
     {words.map((word, index) => (
       <span key={index} className="mr-2 mt-2 md:mr-3 md:mt-3">

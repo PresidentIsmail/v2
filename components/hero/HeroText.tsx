@@ -1,12 +1,8 @@
 "use client";
 
-import { Fragment, useRef } from "react";
-import { Variants, motion, useScroll, useTransform } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 
-const heroText = "Hobbyist Developer & Designer";
-const heroTextArray = heroText.split(" ");
-
-const textVariants: Variants = {
+const getTextVariants = (delay: number): Variants => ({
   initial: {
     opacity: 0,
     y: "50px",
@@ -14,41 +10,35 @@ const textVariants: Variants = {
   animate: {
     opacity: 1,
     y: "0px",
-    transition: (delay: number) => ({
+    transition: {
       delay: delay,
-      duration: 1,
-      ease: "linear",
-    }),
+      duration: 1.5,
+      ease: "easeInOut",
+      type: "spring",
+      mass: 0.5,
+      damping: 8,
+    },
   },
-};
+});
 
 const HeroText = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
-
   return (
-    <motion.h1
-      ref={containerRef}
-      className="text-center text-5xl font-extrabold md:text-7xl lg:text-8xl top-1/2 absolute -translate-y-1/2"
-      style={{ opacity }}
-    >
+    <motion.h1 className="w-full text-center text-3xl font-extrabold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
       <motion.span
-        variants={textVariants}
+        variants={getTextVariants(1.5)}
         initial="initial"
         animate="animate"
-        custom={0.5}
         role="text"
-        className={`gradient g1 animate-gradient w-max`}
+        className={`gradient g1 animate-gradient inline-block w-max`}
       >
         Hobbyist
       </motion.span>{" "}
       <br />
       <motion.span
-        variants={textVariants}
+        variants={getTextVariants(1.75)}
         initial="initial"
         animate="animate"
-        custom={0.5}
+        className="inline-block"
         role="text"
       >
         Developer &amp; Designer&#46;

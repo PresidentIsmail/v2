@@ -15,10 +15,10 @@ const AboutSection = () => {
     <section
       id="about"
       aria-label="about"
-      className="relative flex select-none items-center justify-center overflow-hidden bg-[#0e0e0f] py-[64px] text-white lg:py-[72px]"
+      className="relative flex select-none items-center justify-center overflow-hidden bg-[#000] pb-[10%]  text-white"
     >
       {/* <h2 className="master-container text-3xl font-medium md:text-5xl lg:text-6xl"> */}
-      <h2 className="master-container text-heading-1 text-secondary-400 my-[10%] font-medium leading-[1.25em] md:leading-[1.08em]">
+      <h2 className="master-container text-3xl font-extrabold leading-[1.25em] sm:text-5xl md:text-6xl md:leading-[1.08em] lg:text-7xl xl:text-8xl">
         <AnimatedParagraph paragraph={paragraph3} />
       </h2>
     </section>

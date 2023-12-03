@@ -1,28 +1,22 @@
 import React from "react";
 
-import VideoCanvas from "./VideoCanvas";
-import DynamicHeroText from "./DynamicHeroText";
 import HeroText from "./HeroText";
-import FadeInContent from "../FadeInContent";
 import HeroIndicators from "./HeroIndicators";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex min-h-screen w-full overflow-hidden bg-[rgb(0,0,0)]">
+    <section
+      className="relative flex min-h-[80vh] w-full overflow-hidden  bg-[rgb(0,0,0)] md:min-h-[90vh] lg:min-h-screen"
+      style={{
+        background:
+          "radial-gradient(50% 50% at 50% 50%,#17003d 0%,#000000 100%)",
+      }}
+    >
       {/* Hero About */}
-      <div className="master-container absolute inset-0  h-full w-full text-white">
-          <HeroText />
+      <div className="absolute top-2/3 flex w-full flex-1 -translate-y-1/2 flex-col text-white md:top-1/2">
+        <HeroText />
         <HeroIndicators />
       </div>
-
-      {/* old hero text */}
-      {/* <div className="absolute left-0 top-1/2 z-10 mr-auto w-full -translate-y-1/2 text-white">
-        <div className="master-container">
-          <SlideInContent direction="slideRight" delay={0.25}>
-            <DynamicHeroText />
-          </SlideInContent>
-        </div>
-      </div> */}
     </section>
   );
 };
