@@ -8,6 +8,7 @@ const globetracer_mp4 =
   "videos/project-walkthoughs/mp4/globetracer_walkthrough.mp4";
 const cozycinema_mp4 =
   "videos/project-walkthoughs/mp4/cozycinema_walkthrough.mp4";
+const v2_mp4 = "videos/project-walkthoughs/mp4/v2_walkthrough.mp4";
 const serengeti_webm =
   "videos/project-walkthoughs/webm/serengeti_walkthrough.webm";
 const crispycanvas_webm =
@@ -15,8 +16,7 @@ const crispycanvas_webm =
 const globetracer_webm =
   "videos/project-walkthoughs/webm/globetracer_walkthrough.webm";
 
-  import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
-
+import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
 
 export type Project = {
   projectTitle: string;
@@ -126,6 +126,32 @@ export const projects: Project[] = [
     webm: serengeti_webm,
     source_code_link: "https://github.com/PresidentIsmail/Serengeti-Sky-Lodges",
     live_site_link: "https://serengeti-sky-lodges.vercel.app/",
+  },
+  {
+    projectTitle: "Personal Portfolio Website",
+    description:
+      "You are looking at it now! A rebuilt of my personal portfolio website using NextJS, TypeScript, TailwindCSS, and Framer Motion.",
+    tags: [
+      {
+        name: "react",
+      },
+      {
+        name: "nextjs",
+      },
+      {
+        name: "typescript",
+      },
+      {
+        name: "tailwind",
+      },
+      {
+        name: "framer motion",
+      },
+    ],
+    mp4: v2_mp4,
+    webm: undefined,
+    source_code_link: "https://github.com/PresidentIsmail/v2",
+    live_site_link: "https://ismailshaikhnag.vercel.app/",
   },
 ];
 
