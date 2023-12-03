@@ -128,7 +128,7 @@ export const projects: Project[] = [
     live_site_link: "https://serengeti-sky-lodges.vercel.app/",
   },
   {
-    projectTitle: "Personal Portfolio Website",
+    projectTitle: "Portfolio Site",
     description:
       "You are looking at it now! A rebuilt of my personal portfolio website using NextJS, TypeScript, TailwindCSS, and Framer Motion.",
     tags: [
