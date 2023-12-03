@@ -31,7 +31,8 @@ const childVariants: Variants = {
       duration: 0.3,
       ease: "easeInOut",
       type: "spring",
-      stiffness: 50,
+      mass: 0.5,
+      damping: 8,
     },
   },
 };
@@ -47,8 +48,6 @@ const lineVariants: Variants = {
     transition: {
       duration: 0.3,
       ease: "easeInOut",
-      type: "spring",
-      stiffness: 50,
     },
   },
 };
@@ -64,15 +63,14 @@ const ServiceSectionItem: React.FC<ServiceSectionItemProps> = ({
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ 
+      viewport={{
         once: true,
-        amount: 0.5,
       }}
       transition={{
         duration: 0.5,
         delay: animationDelay,
         when: "beforeChildren",
-        staggerChildren: 0.2,
+        staggerChildren: 0.15,
       }}
       className=" grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-24 "
     >

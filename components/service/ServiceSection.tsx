@@ -14,7 +14,7 @@ const ServiceSection = () => {
       aria-label="services"
       className=" flex flex-col gap-y-8 bg-[#fff9f2] py-[64px] text-[#5d3b14] md:gap-y-16 lg:gap-y-24 lg:py-[72px]"
     >
-      <FadeInContent className="master-container">
+      <FadeInContent className="master-container" delay={0.25}>
         {/* Header */}
         <header className="flex max-w-full select-none items-center justify-start gap-x-2">
           {/* icon */}
