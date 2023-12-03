@@ -9,10 +9,11 @@ import SlideInContent from "../SlideInContent";
 
 const ContactSection = () => {
   return (
-    <section 
-    id="contact"
-    aria-label="contact"
-    className=" bg-[#ffd400] text-black py-[64px] lg:py-[72px]">
+    <section
+      id="contact"
+      aria-label="contact"
+      className=" bg-[#ffd400] py-[64px] text-black lg:py-[72px]"
+    >
       <FadeInContent className="master-container">
         <header className="flex w-full select-none items-start justify-start gap-x-2 pb-[calc(clamp(5rem,21vh,12rem)*.475)]">
           {/* icon */}
@@ -25,12 +26,12 @@ const ContactSection = () => {
         </header>
       </FadeInContent>
 
-      <div className="relative master-container">
+      <div className="master-container relative">
         <hr className="h-0.5 w-full bg-[#000000] opacity-50" />
         <CircularContactButton
           label="Contact Me"
-          href="#"
-          aria-label="contact me"
+          href="mailto:shaikhnagismail@gmail.com"
+          aria-label="send email"
         />
       </div>
 
@@ -38,7 +39,7 @@ const ContactSection = () => {
         <ContactEmailLink
           label="shaikhnagismail@gmail.com"
           href="mailto:shaikhnagismail@gmail.com"
-          aria-label="email"
+          aria-label="send email"
         />
       </SlideInContent>
     </section>

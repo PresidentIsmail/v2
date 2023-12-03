@@ -1,18 +1,14 @@
 import React from "react";
 
 import { IoPersonOutline as About } from "react-icons/io5";
-import {
-  LuTarget as Target,
-  LuPhone as Phone,
-  LuMail as Mail,
-} from "react-icons/lu";
+import { LuTarget as Target, LuMail as Mail } from "react-icons/lu";
 import { PiHandshake } from "react-icons/pi";
 import NavLink from "./NavLink";
 import FadeInContent from "../FadeInContent";
 
 const DesktopMenu = () => {
   return (
-    <ul className="hidden lg:flex items-center justify-between gap-x-8">
+    <ul className="hidden items-center justify-between gap-x-8 lg:flex">
       <li>
         <FadeInContent>
           <NavLink
@@ -46,10 +42,10 @@ const DesktopMenu = () => {
       <li>
         <FadeInContent delay={0.75}>
           <NavLink
-            href="#contact"
+            href="mailto:shaikhnagismail@gmail.com"
             icon={<Mail />}
             text="Contact"
-            aria-label="Contact section"
+            aria-label="Email Developer"
           />
         </FadeInContent>
       </li>
