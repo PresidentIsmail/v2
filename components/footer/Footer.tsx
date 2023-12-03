@@ -38,7 +38,7 @@ const Footer = () => {
 
       {/* Bottom of footer  */}
       <section className="master-container mt-10 flex w-full flex-col justify-between gap-y-4 md:flex-row">
-        <SlideInContent delay={0.5} className=" order-3 md:order-1">
+        <SlideInContent className=" order-3 md:order-1">
           <div className="flex items-start justify-between gap-x-8 gap-y-4 md:flex-row md:items-center md:justify-start ">
             <RenderVersion />
             <RenderLocalTime />
@@ -46,11 +46,11 @@ const Footer = () => {
         </SlideInContent>
 
         {/* horizontal hidden on md screens */}
-        <SlideInContent delay={0.5} className="order-2 md:hidden">
+        <SlideInContent className="order-2 md:hidden">
           <div className="my-1 flex h-[1px] w-full bg-white/50  " />
         </SlideInContent>
 
-        <SlideInContent delay={0.5} className=" order-1 md:order-3">
+        <SlideInContent className=" order-1 md:order-3">
           <RenderSocials />
         </SlideInContent>
       </section>

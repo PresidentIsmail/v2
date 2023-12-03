@@ -43,7 +43,7 @@ const HeroIndicators: React.FC = () => {
       className="master-container mt-4 flex w-[80vw] flex-col gap-y-4 sm:gap-y-8 md:mt-8 md:gap-y-12"
     >
       {/* 5 lines stacked from big to small */}
-      {[...Array(6)].map((_, index) => (
+      {[...Array(8)].map((_, index) => (
         <motion.div
           variants={itemVariants}
           key={index}

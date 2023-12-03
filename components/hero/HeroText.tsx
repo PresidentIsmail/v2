@@ -29,7 +29,7 @@ const HeroText = () => {
         initial="initial"
         animate="animate"
         role="text"
-        className={`gradient g1 animate-gradient inline-block w-max`}
+        className={`gradient g1 animate-gradient inline-block w-max text-4xl font-extrabold sm:text-6xl md:text-7xl lg:text-8xl`}
       >
         Hobbyist
       </motion.span>{" "}
