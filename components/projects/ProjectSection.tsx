@@ -16,7 +16,7 @@ const ProjectSection: React.FC = () => {
       className="flex flex-col gap-y-8 bg-[rgb(0,0,0)] py-[64px] text-white md:gap-y-16 lg:gap-y-24 lg:py-[72px]"
     >
       {/* Header */}
-      <FadeInContent className="master-container">
+      <FadeInContent className="master-container" delay={0.25}>
         <header className="flex w-full select-none items-center justify-start gap-x-2">
           {/* icon */}
           <div className="relative h-[30px] w-[30px] md:h-[48px] md:w-[48px] lg:h-[56px] lg:w-[56px]">
