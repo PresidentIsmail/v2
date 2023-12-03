@@ -246,6 +246,23 @@
   ) !important;
 }
 
+.box.g9,
+.gradient.g9 {
+  background-image: -moz-linear-gradient(90deg,#d66761 16.66666%,#f5c0b2 33.33333%,#aee8fa 50%,#68bde7 66.66666%,#6bd490 83.33333%,#a2f6cf)  !important;
+  background-image: -webkit-linear-gradient(90deg,#d66761 16.66666%,#f5c0b2 33.33333%,#aee8fa 50%,#68bde7 66.66666%,#6bd490 83.33333%,#a2f6cf)  !important;
+  background-image: linear-gradient(90deg,#d66761 16.66666%,#f5c0b2 33.33333%,#aee8fa 50%,#68bde7 66.66666%,#6bd490 83.33333%,#a2f6cf) !important;
+}
+
+
+
+/* 
+  -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg,#d66761 16.66666%,#f5c0b2 33.33333%,#aee8fa 50%,#68bde7 66.66666%,#6bd490 83.33333%,#a2f6cf);
+    color: #fff
+*/
+
 .box.animate-gradient,
 .gradient.animate-gradient {
   animation: gradient 1s ease infinite;

@@ -25,7 +25,7 @@ const HeroText = () => {
   return (
     <motion.h1 className="w-full text-center text-3xl font-extrabold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
       <motion.span
-        variants={getTextVariants(1)}
+        variants={getTextVariants(0.25)}
         initial="initial"
         animate="animate"
         role="text"
@@ -35,7 +35,7 @@ const HeroText = () => {
       </motion.span>{" "}
       <br />
       <motion.span
-        variants={getTextVariants(1.25)}
+        variants={getTextVariants(0.45)}
         initial="initial"
         animate="animate"
         className="inline-block"

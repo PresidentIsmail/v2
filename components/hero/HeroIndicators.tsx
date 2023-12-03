@@ -40,17 +40,17 @@ const HeroIndicators: React.FC = () => {
       variants={parentVariants}
       initial="initial"
       animate="animate"
-      className="master-container mt-4 flex w-[80vw] flex-col gap-y-4 sm:gap-y-8 md:mt-8 md:gap-y-12"
+      className="master-container mt-4 flex w-[80vw] flex-col gap-y-6 sm:gap-y-8 md:mt-8 md:gap-y-12"
     >
       {/* 5 lines stacked from big to small */}
-      {[...Array(8)].map((_, index) => (
+      {[...Array(7)].map((_, index) => (
         <motion.div
           variants={itemVariants}
           key={index}
-          className="mx-auto h-[1px]  bg-white"
+          className="mx-auto h-[2px]  bg-white"
           style={{
             width: `${
-              index === 0 ? "80%" : `${(1 / (index + 1)) * 0.95 * 100}%`
+              index === 0 ? "90%" : `${Math.pow(0.65, index) * 100}%` // Exponential decrease
             }`,
           }}
         />
