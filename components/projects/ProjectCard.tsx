@@ -26,18 +26,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const halfSpanClasses = "";
 
   const firstProjectClasses = "sm:grid sm:grid-cols-12";
-  const lastProjectClasses = "sm:grid sm:grid-cols-12 xl:flex xl:flex-col";
+  const lastProjectClasses = "sm:grid sm:grid-cols-12 lg:flex lg:flex-col";
 
   return (
     <article
       className={`${defaultContainerClasses} 
-    ${index === 1 && firstProjectClasses}
-    ${index === 4 ? lastProjectClasses : halfSpanClasses}
+      ${index === 4 && lastProjectClasses}
+    ${index === 1 || index === 5 ? firstProjectClasses : halfSpanClasses}
+    
     `}
     >
       {/* Video of project */}
       <div className="relative aspect-video overflow-hidden sm:col-span-5">
-       <VideoLoader mp4={mp4} webm={webm}/>
+        <VideoLoader mp4={mp4} webm={webm} />
       </div>
 
       {/* description and btns*/}

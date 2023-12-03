@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-import { projects, Project } from "@/constants";
 
-import SlideInContent from "../SlideInContent";
 import FadeInContent from "../FadeInContent";
 import projectsImg from "../../public/images/icons/projects.svg";
-import ProjectCard from "./ProjectCard";
+
+import ProjectLayout from "./ProjectLayout";
 
 const ProjectSection: React.FC = () => {
   return (
@@ -30,22 +29,9 @@ const ProjectSection: React.FC = () => {
         </header>
       </FadeInContent>
 
-      {/* Content */}
-      <div className="master-container grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-        {projects.map((project: Project, index: number) => (
-          <SlideInContent
-            key={index}
-            delay={index * 0.2}
-            className={`box g${index + 1} rounded-lg p-0.5 ${
-              index === 0 ? "sm:col-span-full" : "sm:col-span-1"
-            }
-          ${index === 3 && "sm:col-span-full xl:order-2 xl:col-span-1"}
-          `}
-          >
-            <ProjectCard {...project} index={index + 1} />
-          </SlideInContent>
-        ))}
-      </div>
+      {/* Project Layout */}
+      <ProjectLayout />
+      
     </section>
   );
 };

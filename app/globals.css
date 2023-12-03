@@ -22,9 +22,6 @@
   @screen xl {
     max-width: 1280px;
   }
-  @screen 2xl {
-    max-width: 1536px;
-  }
 }
 
 /* classes to animate the color of the font */

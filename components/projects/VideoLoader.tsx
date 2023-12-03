@@ -59,7 +59,7 @@ return (
 
       <video
         ref={videoRef}
-        preload="none"
+        preload="auto"
         autoPlay
         loop
         muted
