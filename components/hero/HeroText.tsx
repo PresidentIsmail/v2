@@ -12,10 +12,10 @@ const getTextVariants = (delay: number): Variants => ({
     y: "0px",
     transition: {
       delay: delay,
-      duration: 1.5,
-      ease: "easeInOut",
+      duration: 5,
+      ease: "linear",
       type: "spring",
-      mass: 0.5,
+      mass: 1,
       damping: 8,
     },
   },
