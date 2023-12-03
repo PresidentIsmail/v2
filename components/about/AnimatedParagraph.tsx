@@ -64,7 +64,7 @@ type DuplicateWordsProps = {
 
 const DuplicateWords: FC<DuplicateWordsProps> = ({ words }) => (
   <span
-    className="absolute flex flex-wrap justify-center leading-none opacity-[0.15]"
+    className="absolute flex flex-wrap justify-center leading-none opacity-[0.10]"
     // hide from screen readers
     aria-hidden="true"
   >
