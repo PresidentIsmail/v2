@@ -17,11 +17,11 @@ export default function Home() {
         {/* About Section */}
         <AboutSection />
 
-        {/* Services Section */}
-        <ServiceSection />
-
         {/* Projects Section */}
         <ProjectSection />
+
+        {/* Services Section */}
+        <ServiceSection />
 
         {/* Contact Section */}
         <ContactSection />
