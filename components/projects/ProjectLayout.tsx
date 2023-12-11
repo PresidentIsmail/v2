@@ -4,10 +4,6 @@ import { projects, Project } from "@/constants";
 import SlideInContent from "../SlideInContent";
 import ProjectCard from "./ProjectCard";
 
-interface ProjectLayoutProps {
-  // Define your props here
-}
-
 const ProjectLayout: React.FC = () => {
   return (
     <div className="master-container grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 ">
