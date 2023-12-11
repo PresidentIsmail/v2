@@ -1,3 +1,11 @@
+import { StaticImageData } from "next/image";
+
+// import project images
+import cozyCinemaImg from "@/public/images/video-posters/cozycinema-poster-01.webp";
+import crispyCanvasImg from "@/public/images/video-posters/crispycanvas-poster.png";
+import serengetiImg from "@/public/images/video-posters/serengeti-poster.png";
+import personalSiteImg from "@/public/images/video-posters/personal-site-poster.png";
+
 // save to variables instead of importing
 // to avoid webpack error
 const serengeti_mp4 =
@@ -26,6 +34,7 @@ export type Project = {
   webm: string | undefined;
   source_code_link: string;
   live_site_link?: string;
+  projectImage?: StaticImageData;
 };
 
 type Socials = {
@@ -63,6 +72,7 @@ export const projects: Project[] = [
     webm: undefined,
     source_code_link: "https://github.com/PresidentIsmail/CozyCinema",
     live_site_link: "https://cozycinema.vercel.app/",
+    projectImage: cozyCinemaImg,
   },
 
   {
@@ -84,6 +94,7 @@ export const projects: Project[] = [
     webm: crispycanvas_webm,
     source_code_link: "https://github.com/PresidentIsmail/Crispy-Canvas",
     live_site_link: "https://crispy-canvas.netlify.app/",
+    projectImage: crispyCanvasImg,
   },
   {
     projectTitle: "Globe Tracer",
@@ -126,6 +137,7 @@ export const projects: Project[] = [
     webm: serengeti_webm,
     source_code_link: "https://github.com/PresidentIsmail/Serengeti-Sky-Lodges",
     live_site_link: "https://serengeti-sky-lodges.vercel.app/",
+    projectImage: serengetiImg,
   },
   {
     projectTitle: "Portfolio Site",
@@ -152,6 +164,7 @@ export const projects: Project[] = [
     webm: undefined,
     source_code_link: "https://github.com/PresidentIsmail/v2",
     live_site_link: "https://ismailshaikhnag.vercel.app/",
+    projectImage: personalSiteImg,
   },
 ];
 
