@@ -19,6 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   source_code_link,
   tags,
   live_site_link,
+  projectImage,
   index,
 }) => {
   const defaultContainerClasses =
@@ -38,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     >
       {/* Video of project */}
       <div className="relative aspect-video overflow-hidden sm:col-span-5">
-        <VideoLoader mp4={mp4} webm={webm} />
+        <VideoLoader mp4={mp4} webm={webm} imageSrc={projectImage} />
       </div>
 
       {/* description and btns*/}
