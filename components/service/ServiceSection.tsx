@@ -51,10 +51,11 @@ const ServiceSection = () => {
             "JavaScript",
             "TypeScript",
             "HTML",
-            "TailwindCSS",
-            "NodeJS",
-            "ReactJS",
             "NextJS",
+            "ReactJS",
+            "NodeJS",
+            "TailwindCSS",
+            "Framer Motion",
             "MongoDB",
           ]}
         />
