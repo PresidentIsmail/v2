@@ -42,7 +42,6 @@ const ServiceSection = () => {
         />
 
         <ServiceSectionItem
-          animationDelay={0.5}
           header=" my digital tool box."
           paragraph=" These are my go to tech stack to make any projects happen. I am
           always eager of learning more about my current stack, and new
