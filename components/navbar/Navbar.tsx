@@ -30,7 +30,7 @@ const MOBILE_WIDTH = 768;
 
 const Navbar = () => {
   return (
-    <nav className="absolute top-[20px] z-40 h-navbar-mobile  w-full text-white md:top-[60px]  md:h-navbar-desktop">
+    <nav className="absolute top-[20px] z-40 h-navbar-mobile w-full text-white selection:bg-white selection:text-[#17003d] md:top-[60px]  md:h-navbar-desktop">
       <section className="master-container flex h-full items-center justify-between">
         {/* Logo */}
         <FadeInContent delay={0.35}>
