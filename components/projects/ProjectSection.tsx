@@ -12,7 +12,7 @@ const ProjectSection: React.FC = () => {
     <section
       id="projects"
       aria-label="projects"
-      className="flex flex-col gap-y-8 bg-[rgb(0,0,0)] py-[64px] text-white md:gap-y-16 lg:gap-y-24 lg:py-[72px]"
+      className="flex flex-col gap-y-8 bg-[rgb(0,0,0)] selection:text-black selection:bg-white py-[64px] text-white md:gap-y-16 lg:gap-y-24 lg:py-[72px]"
     >
       {/* Header */}
       <FadeInContent className="master-container" delay={0.25}>

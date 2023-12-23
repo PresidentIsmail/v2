@@ -12,7 +12,7 @@ const Footer = () => {
     <footer
       id="footer"
       aria-label="footer"
-      className="flex w-full flex-col gap-y-12 bg-[#0d0d0d] bg-stars pb-4 pt-[64px] text-white md:pb-6"
+      className="flex w-full flex-col gap-y-12 bg-[#0d0d0d] bg-stars pb-4 pt-[64px] text-white selection:bg-white selection:text-[#0d0d0d] md:pb-6"
     >
       {/* Header */}
       <FadeInContent delay={0.25}>
