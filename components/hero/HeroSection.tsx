@@ -6,7 +6,7 @@ import HeroIndicators from "./HeroIndicators";
 const HeroSection = () => {
   return (
     <section
-      className="relative flex min-h-[100vh] w-full overflow-hidden  bg-[rgb(0,0,0)] md:min-h-[120vh]"
+      className="relative flex min-h-[100vh] w-full select-none  overflow-hidden bg-[rgb(0,0,0)] md:min-h-[120vh]"
       style={{
         background:
           "radial-gradient(50% 50% at 50% 50%,#17003d 0%,#000000 100%)",
