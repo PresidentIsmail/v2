@@ -11,10 +11,11 @@ interface Props {
   // Define your component props here
   webm?: string;
   mp4: string;
+  videoTitle: string;
   imageSrc?: StaticImageData | undefined;
 }
 
-const VideoLoader: React.FC<Props> = ({ mp4, webm, imageSrc }) => {
+const VideoLoader: React.FC<Props> = ({ mp4, webm, videoTitle, imageSrc }) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoError, setVideoError] = useState(false);
@@ -71,6 +72,7 @@ const VideoLoader: React.FC<Props> = ({ mp4, webm, imageSrc }) => {
         loop
         muted
         playsInline
+        title={videoTitle}
         className="h-full w-full rounded-none object-cover"
         onError={handleError}
       >

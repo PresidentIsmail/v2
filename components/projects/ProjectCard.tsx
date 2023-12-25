@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     >
       {/* Video of project */}
       <div className="relative aspect-video overflow-hidden sm:col-span-5">
-        <VideoLoader mp4={mp4} webm={webm} imageSrc={projectImage} />
+        <VideoLoader mp4={mp4} webm={webm} imageSrc={projectImage} videoTitle={`${projectTitle} | Project Demo`} />
       </div>
 
       {/* description and btns*/}
